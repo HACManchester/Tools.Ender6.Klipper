@@ -3,6 +3,8 @@
 This represents the documentation for the Hackspace Ender6 3D Printer.
 This current implementation uses mkdocs to generate the site.
 
+  * https://HACManchester.github.io/Tools.Ender6.Klipper
+
 ## Extensions
 
 The theme in use is mkdocs-material
