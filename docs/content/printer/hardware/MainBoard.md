@@ -6,3 +6,5 @@ Note this isn't controlling the hotend
   * https://github.com/bigtreetech/BIGTREETECH-SKR-mini-E3
 
 ![MainBoard1.png](images/MainBoard1.png)
+
+![MainBoard-Wiring1.png](images/MainBoard-Wiring1.png)
