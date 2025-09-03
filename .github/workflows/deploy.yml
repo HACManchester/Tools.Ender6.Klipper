@@ -32,7 +32,7 @@ jobs:
         with:
           python-version: 3.x
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: pip install -r virtenv/requirements.txt
       - name: Make a folder to stop a stupid error
         run: mkdir -p _site
       - name: Build mkdocs
