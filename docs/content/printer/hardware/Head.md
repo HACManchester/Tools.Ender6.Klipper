@@ -10,6 +10,10 @@ The head appears to be controlled via CAN Bus
     https://os.ratrig.com/docs/toolboards/btt/ebb-36-12
   * BLTouch
     https://www.antclabs.com/bltouch
+  * Filament Sensor
+    https://www.3djake.uk/ldo-motors/smart-filament-sensor-1
+    https://github.com/RobertLorincz/Orbiter-2-Smart-Sensor
+    https://www.orbiterprojects.com/smart-sensor-for-orbiter-v2
 
 ![Head1-Front.jpg](images/Head1-Front.jpg)
 
@@ -18,10 +22,9 @@ The head appears to be controlled via CAN Bus
 ## HotEnd
 
 I'm not sure what hotend mount is currently being used it must be compatible with the Ender6
-and allow for a Rapido / EBB36 / BLTouch
+and allow for a Rapido / EBB36 / BLTouch / LDO Orbiter
 
-TODO the i2C pins on the board are also being used for something?
-LIMIT_1=PB7,LIMIT_2=PB5,LIMIT_3=PB6
+There is a filament sensor mounted to the top of the LDO Orbiter
+I think this is using pins PB5, PB6 on the EBB36
 
-
-![EBB36 CAN V1.0-PIN.png](images/EBB36 CAN V1.0-PIN.png)
+![EBB36-CAN-V1.0-PIN.png](images/EBB36-CAN-V1.0-PIN.png)
