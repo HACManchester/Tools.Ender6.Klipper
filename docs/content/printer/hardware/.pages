@@ -1,4 +1,6 @@
 nav:
   - Overview.md
   - Psu.md
+  - Rpi.md
+  - MainBoard.md
   - ...
