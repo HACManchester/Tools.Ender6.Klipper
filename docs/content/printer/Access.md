@@ -1,10 +1,17 @@
 # Access
 
-## SSH Access
+## SSH Access - Old
 
 Currently the Pi is setup with the default username / password
 
   * Host: 172.16.0.172
   * username: pi
   * password: raspberry
+  * root password: hacman
+
+## SSH Access - New
+
+  * Host: 172.16.0.172 - PrintDankula
+  * username: hacman
+  * password: hacman
   * root password: hacman

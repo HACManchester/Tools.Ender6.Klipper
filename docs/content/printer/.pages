@@ -1,2 +1,7 @@
 nav:
   - hardware
+  - calibration
+  - setup
+  - updates
+  - Access.md
+  - ...
