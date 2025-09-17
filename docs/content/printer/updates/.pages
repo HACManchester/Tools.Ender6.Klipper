@@ -1,4 +1,5 @@
 nav:
   - mainboard.md
-  - head.md
+  - head-fw.md
+  - head-bootloader.md
   - ...

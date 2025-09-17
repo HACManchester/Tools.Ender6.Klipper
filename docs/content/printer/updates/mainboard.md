@@ -39,6 +39,7 @@ sudo service klipper start
 
 Check if the device can be reached
 ```sh
+cd ~/klipper
 ~/klippy-env/bin/python3 ./klippy/console.py /dev/serial/by-id/usb-Klipper_stm32g0b1xx_180049001450415833323520-if00
 ```
 
