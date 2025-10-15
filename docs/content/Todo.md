@@ -1,34 +1,31 @@
 # TODO
 
-## Can Bus
-
-The Can Bus is not coming up automatically
-```
-sudo systemctl status systemd-networkd
-can0: Failed to set CAN interface configurations: Device doesn't support restart from Bus Off. Operation not supported
-```
-
-To start now
-```
-sudo service klipper stop
-sudo ip link set up can0
-sudo service klipper start
-```
-kernel version is 6.12.47 - could this be related https://lkml.rescloud.iu.edu/2507.2/00068.html
-
-```
-sudo systemctl disable klipper
-sudo systemctl enable klipper
-```
-
-
 ## Camera
 
-For the camera I've commented out
-`camera_auto_detect=1`
-Under `/boot/firmware/config.txt`
+Having issues getting the camera to work
 
-This has stopped the spam under dmesg, but I need to check the camera still works under Klipper
+```
+# Command
+v4l2-ctl --list-devices
+
+# Output
+unicam (platform:3f801000.csi):
+        /dev/video0
+        /dev/media3
+```
+
+```
+# Command
+dmesg
+
+# Output
+unicam 3f801000.csi: Failed to start media pipeline: -22
+```
+
+
+## Config
+
+Config needs a workover, Homing doesn't work at least at the moment without massive stutter
 
 
 ## X Endstop
