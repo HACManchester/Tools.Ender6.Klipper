@@ -24,6 +24,19 @@ Add the following line to `/boot/firmware/config.txt`
 dtoverlay=dwc2
 ```
 
+## USB to Can Adapter Fix
+
+With the default setup there can be an issue getting the USB-Can Adapter to work
+In that it fails to come up on a reboot, to fix this
+
+within the file `nano /etc/systemd/network/25-can.network`  
+comment out the line starting with RestartSec
+```
+[CAN]
+BitRate=1M
+# RestartSec=0.1s
+```
+
 ## KAuth Setup
 
 Next we're going to install KAuth for updating and managing klipper
