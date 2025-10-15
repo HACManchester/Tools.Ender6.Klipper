@@ -22,9 +22,6 @@ sudo systemctl enable klipper
 ```
 
 
-
-
-
 ## Camera
 
 For the camera I've commented out
@@ -39,14 +36,6 @@ This has stopped the spam under dmesg, but I need to check the camera still work
 I think the X Endstop has been configured for sensorless
 check the klipper config
 
-## Shutdown
-
-Currently the shutdown button is missing on klipperscreen to cleanly shutdown the pi
-
-## Updates
-
-Need to check on compiling klipper for the different control boards / hardware
-and add in any plugins from my own setup
 
 ## Door Bracket
 
