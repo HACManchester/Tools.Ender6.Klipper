@@ -36,14 +36,14 @@ Config Options
 
 ## Flashing the Board
 
-To get the UUID of the board
-```
+```bash
+# stop Klipper
+sudo service klipper stop
+# Get the UUID of the board
 python3 ~/katapult/scripts/flashtool.py -i can0 -q
-```
-
-This reports bae8d370fb76 for us
-
-To flash the firmware
-```
+# This reports bae8d370fb76 for us
+# To flash the firmware
 python3 ~/katapult/scripts/flash_can.py -i can0 -f ~/klipper/out/klipper.bin -u bae8d370fb76
+# To start klipper
+sudo service klipper start
 ```

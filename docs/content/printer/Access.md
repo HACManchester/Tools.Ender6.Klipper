@@ -15,3 +15,10 @@ Currently the Pi is setup with the default username / password
   * username: hacman
   * password: hacman
   * root password: hacman
+
+## TODO
+
+Planned setup on the following urls (awaiting approval)
+
+  * http://printdankula.space.hacman.org.uk 
+  * https://ender6.space.hacman.org.uk

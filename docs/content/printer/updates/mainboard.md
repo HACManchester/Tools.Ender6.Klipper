@@ -31,6 +31,7 @@ To Flash the main board
 sudo service klipper stop
 # Try to flash via the USB ID
 make flash FLASH_DEVICE=/dev/serial/by-id/usb-Klipper_stm32g0b1xx_180049001450415833323520-if00
+# The flashing might complain afterwards but it's probably run fine.
 # If this fails try and flash via the USB number ID
 make flash FLASH_DEVICE=0483:df11
 # Restart klipper
