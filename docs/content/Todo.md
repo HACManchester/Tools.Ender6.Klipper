@@ -2,28 +2,27 @@
 
 ## Can Bus
 
-After upgrading to a new mainsailos / klipper there are two things to look at
-First the USB Can bus is not coming up automatically when called from systemd-networkd on bootup
+The Can Bus is not coming up automatically
 ```
 sudo systemctl status systemd-networkd
 can0: Failed to set CAN interface configurations: Device doesn't support restart from Bus Off. Operation not supported
 ```
 
-Currently I have to startup the can bus manually with `sudo ip link set up can0`
-kernel version is 6.12.47 - could this be related https://lkml.rescloud.iu.edu/2507.2/00068.html
-
-
-## Main Controller
-
-I think one of the USB sockets on the Pi3 is causing issues when used (board crashout)
-mention to only use ones in the picture
-Update - nope still crashes, try a pi4
-
 To start now
 ```
+sudo service klipper stop
 sudo ip link set up can0
 sudo service klipper start
 ```
+kernel version is 6.12.47 - could this be related https://lkml.rescloud.iu.edu/2507.2/00068.html
+
+```
+sudo systemctl disable klipper
+sudo systemctl enable klipper
+```
+
+
+
 
 
 ## Camera
@@ -33,7 +32,6 @@ For the camera I've commented out
 Under `/boot/firmware/config.txt`
 
 This has stopped the spam under dmesg, but I need to check the camera still works under Klipper
-
 
 
 ## X Endstop

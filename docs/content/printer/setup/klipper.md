@@ -7,13 +7,22 @@
 
 Moonraker is the python web API that these front ends can connect to
 
-
 ## RPI Setup
 
 First setup an SD card image with MainsailOS
 Using Rpi Imager
 
   * https://github.com/raspberrypi/rpi-imager
+
+## RPI3 USB Fix
+
+In the case of the RPI3 there's an option we need to add to the boot config
+otherwise traffic over the USB Bus to the control cards will cause the Pi to lock up
+
+Add the following line to `/boot/firmware/config.txt`
+```bash
+dtoverlay=dwc2
+```
 
 ## KAuth Setup
 
