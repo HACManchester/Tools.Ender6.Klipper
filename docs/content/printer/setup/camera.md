@@ -18,27 +18,21 @@ rpicam-hello --list-cameras
 v4l2-ctl --list-devices
 ```
 
-## TODO
+## Opera Browser Fix
+
+For some reason the opera browser can have issues viewing the video stream
+
+  * Browse to opera://settings/?search=WebRTC
+  * Select "Use any suitable network interface (recommended)"
+    (instead of Disable non-proxied UDP)
+
+## Other Tests
 
 This command works
 ```
 rpicam-still -t 2000 -o test.jpg --width 1920 --height 1080
 ```
 
-But crowsnest is having issues
+Also should be visible under
 
-
-unicam 3f801000.csi: Failed to start media pipeline: -22
-
-http://172.16.0.172/webcam/?action=snapshot
-http://172.16.0.172/webcam/webrtc
-
-
-
-https://www.teamfdm.com/forums/topic/2231-crowsnest-pi-cam-with-raspi-sbc-setup-quirk
-
-
-Issue seems to be webrtc on opera but not chrome?
-http://172.16.0.172/webcam/webrtc
-
-try some different options
+  * http://172.16.0.172/webcam/webrtc
