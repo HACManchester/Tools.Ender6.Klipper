@@ -4,7 +4,8 @@
 
 Currently the Pi is setup with the default username / password
 
-  * Host: 172.16.0.172
+  * Host: http://ender6.space.hacman.org.uk
+  * IP: 172.16.0.172
   * username: pi
   * password: raspberry
   * root password: hacman
