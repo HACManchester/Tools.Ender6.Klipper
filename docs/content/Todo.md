@@ -1,43 +1,14 @@
 # TODO
 
-## Camera
+  * Check maximum X / Y travel (X travel is a bit short)
+  * Make sure the Y travel doesn't hit the camera when the head is in the middle
+  * Calibrate the PID for the heated bed / nozzel
+  * Calibrate the knobs at the bottom for the bed level
 
-Having issues getting the camera to work
-
-```
-# Command
-v4l2-ctl --list-devices
-
-# Output
-unicam (platform:3f801000.csi):
-        /dev/video0
-        /dev/media3
-```
-
-```
-# Command
-dmesg
-
-# Output
-unicam 3f801000.csi: Failed to start media pipeline: -22
-```
-
-
-## Config
-
-Config needs a workover, Homing doesn't work at least at the moment without massive stutter
-
-
-## X Endstop
-
-I think the X Endstop has been configured for sensorless
-check the klipper config
-
+  * Document Print start / orcalsicer / prusaslicer profiles
+  * Setup git repo for ender6 config backup
+  * Review documentation
 
 ## Door Bracket
 
 Door bracket needs reprinting, apparantly there is an issue with these easily breaking
-
-## Calibration
-
-Once everything is updated add in some calibration steps from my own setup
