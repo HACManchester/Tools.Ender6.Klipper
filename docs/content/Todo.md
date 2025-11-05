@@ -7,6 +7,7 @@
 
   * Document Print start / orcalsicer / prusaslicer profiles
   * Setup git repo for ender6 config backup
+  * Default Preasure Advance
   * Review documentation
 
 ## Door Bracket
